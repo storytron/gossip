@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2747" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2748" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
 <startingVerb Label="FATE_decide_who_greet_who"/>
@@ -31,9 +31,10 @@
 <attribute Name="howLongToSpy">0</attribute>
 </attributes>
 </actor>
-<actor Label="First Actor (p)">
+<actor Label="Bara (p)">
 <attributes>
 <attribute Name="description">the player</attribute>
+<attribute Name="image">image3796083047282614043.jpg</attribute>
 <attribute Name="active">true</attribute>
 <attribute Name="female">true</attribute>
 <attribute Name="dontMoveMe">false</attribute>
@@ -46,10 +47,95 @@
 <attribute Name="howLongToSpy">0</attribute>
 </attributes>
 </actor>
+<actor Label="Owen">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image7535588260959233011.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">false</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">nowhere</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+</attributes>
+</actor>
+<actor Label="Max">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image2417762318180500494.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">false</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">nowhere</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+</attributes>
+</actor>
+<actor Label="Ella">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image8752711086674121255.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">true</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">nowhere</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+</attributes>
+</actor>
+<actor Label="Mort">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image1363122145176617695.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">false</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">nowhere</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+</attributes>
+</actor>
+<actor Label="Zoe">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image453858112526700276.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">true</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">nowhere</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+</attributes>
+</actor>
 </actorSet>
 <pValueSet>
 <pValues OfWhom="Fate"/>
-<pValues OfWhom="First Actor (p)"/>
+<pValues OfWhom="Bara (p)"/>
+<pValues OfWhom="Owen"/>
+<pValues OfWhom="Max"/>
+<pValues OfWhom="Ella"/>
+<pValues OfWhom="Mort"/>
+<pValues OfWhom="Zoe"/>
 </pValueSet>
 <propSet>
 <prop Label="BareProp">
@@ -57,7 +143,7 @@
 <carried>false</carried>
 <visible>false</visible>
 <inPlay>true</inPlay>
-<owner>First Actor (p)</owner>
+<owner>Bara (p)</owner>
 <location>nowhere</location>
 </prop>
 </propSet>
@@ -118,7 +204,7 @@
 <token Arg="" Label="AllActorsWho">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
-<token Arg="First Actor (p)" Label="ActorConstant"/>
+<token Arg="Bara (p)" Label="ActorConstant"/>
 </token>
 </token>
 </token>
