@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2748" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2770" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="FATE_decide_who_greet_who"/>
+<startingVerb Label="once upon a time"/>
+<startingRole Label="FATE"/>
+<startingOption Label="FATE_what_going_to_do"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -55,7 +57,7 @@
 <attribute Name="female">false</attribute>
 <attribute Name="dontMoveMe">false</attribute>
 <attribute Name="unconscious">false</attribute>
-<attribute Name="location">nowhere</attribute>
+<attribute Name="location">BareStage</attribute>
 <attribute Name="spyingOn">Fate</attribute>
 <attribute Name="targetStage">nowhere</attribute>
 <attribute Name="occupiedUntil">0</attribute>
@@ -71,7 +73,7 @@
 <attribute Name="female">false</attribute>
 <attribute Name="dontMoveMe">false</attribute>
 <attribute Name="unconscious">false</attribute>
-<attribute Name="location">nowhere</attribute>
+<attribute Name="location">BareStage</attribute>
 <attribute Name="spyingOn">Fate</attribute>
 <attribute Name="targetStage">nowhere</attribute>
 <attribute Name="occupiedUntil">0</attribute>
@@ -87,7 +89,7 @@
 <attribute Name="female">true</attribute>
 <attribute Name="dontMoveMe">false</attribute>
 <attribute Name="unconscious">false</attribute>
-<attribute Name="location">nowhere</attribute>
+<attribute Name="location">BareStage</attribute>
 <attribute Name="spyingOn">Fate</attribute>
 <attribute Name="targetStage">nowhere</attribute>
 <attribute Name="occupiedUntil">0</attribute>
@@ -103,7 +105,7 @@
 <attribute Name="female">false</attribute>
 <attribute Name="dontMoveMe">false</attribute>
 <attribute Name="unconscious">false</attribute>
-<attribute Name="location">nowhere</attribute>
+<attribute Name="location">BareStage</attribute>
 <attribute Name="spyingOn">Fate</attribute>
 <attribute Name="targetStage">nowhere</attribute>
 <attribute Name="occupiedUntil">0</attribute>
@@ -119,7 +121,7 @@
 <attribute Name="female">true</attribute>
 <attribute Name="dontMoveMe">false</attribute>
 <attribute Name="unconscious">false</attribute>
-<attribute Name="location">nowhere</attribute>
+<attribute Name="location">BareStage</attribute>
 <attribute Name="spyingOn">Fate</attribute>
 <attribute Name="targetStage">nowhere</attribute>
 <attribute Name="occupiedUntil">0</attribute>
@@ -157,9 +159,37 @@
 <yCoord>0.0</yCoord>
 </stage>
 </stageSet>
-<customOperatorSet/>
+<customOperatorSet>
+<customOperator Label="AllActorsOnStage" Type="ActorGroup">
+<parameter Label="ActorReacting" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AND">
+<token Arg="" Label="NOT">
+<Description>Are not the reacting actor</Description>
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="0" Parameter="true"/>
+</token>
+</token>
+<token Arg="" Label="AreSameStage">
+<Description>Are in the same location as the reacting actor</Description>
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="CandidateActor"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="0" Parameter="true"/>
+</token>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+</customOperatorSet>
 <optionSet>
-<option Label="greet_A">
+<option Label="FATE_what_going_to_do">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
 <token Arg="" Label="true"/>
@@ -368,18 +398,167 @@
 </script>
 </socketSpecs>
 </option>
+<option Label="greet_A">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsOnStage">
+<token Arg="" Label="ReactingActor"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="3">
+<script>
+<token Arg="" Label="AcceptableQuantifiers">
+<token Arg="" Label="AllQuantifiersWhich">
+<token Arg="" Label="OR">
+<token Arg="" Label="OR4">
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.6" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.4" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</token>
+</token>
+<token Arg="" Label="OR3">
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="-0.4" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="-0.6" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</token>
+</token>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="wander_around">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
 </optionSet>
 <roleSet>
 <role>
 <assumeRoleIf>
 <token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AND">
-<token Arg="" Label="PermitFateToReact"/>
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="Fate" Label="ActorConstant"/>
-</token>
-</token>
+<token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
 <optionlink Index="0"/>
@@ -439,6 +618,18 @@
 </token>
 </assumeRoleIf>
 </role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="3"/>
+<optionlink Index="4"/>
+</role>
 </roleSet>
 <categorySet>
 <category Label="System">
@@ -483,7 +674,7 @@
 </token>
 </token>
 </script>
-<rolelink Index="0" Label="Fate"/>
+<rolelink Index="0" Label="FATE"/>
 </verb>
 <verb Label="MeetingAlarm" Witnesses="ANYBODY_ON_STAGE">
 <description> </description>
@@ -975,8 +1166,7 @@
 </verb>
 </category>
 <category Label="v_1.0.1">
-<verb Label="greet_A" Witnesses="ANYBODY_ON_STAGE">
-<description> </description>
+<verb Label="FATE_what_going_to_do" Witnesses="ANYBODY_ON_STAGE">
 <hijackable>false</hijackable>
 <timeToPrepare>1</timeToPrepare>
 <timeToExecute>1</timeToExecute>
@@ -1010,6 +1200,100 @@
 </script>
 </socket>
 <socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="6" Label="Protagonist"/>
+</verb>
+<verb Label="wander_around" Witnesses="ANYBODY_ON_STAGE">
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>v_1.0.1</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="wander around" Label="TextConstant"/>
+</token>
+</script>
+</socket>
+</verb>
+<verb Label="greet_A" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>v_1.0.1</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="greet" Label="TextConstant"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="3" Notes="" Presence="REQUIRED" Type="Quantifier" Visible="true" Witness="true">
 <suffix>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="TextConstant"/>
