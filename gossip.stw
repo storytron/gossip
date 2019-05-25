@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2811" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2820" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="A_chat_more_with_B"/>
+<startingVerb Label="B_say_A_that_C_say_A_Z"/>
 <startingRole Label="A"/>
-<startingOption Label="A_say_B_talk_about_C"/>
+<startingOption Label="A_say_goodbye_B"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -191,12 +191,18 @@
 <body>
 <token Arg="" Label="Returned value">
 <token Arg="" Label="AllQuantifiersWhich">
-<token Arg="" Label="OR">
+<token Arg="" Label="OR3">
 <token Arg="" Label="OR4">
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
 <token Arg="0.99" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.8" Label="BNumberConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameQuantifier">
@@ -211,10 +217,30 @@
 <token Arg="0.4" Label="BNumberConstant"/>
 </token>
 </token>
+</token>
+<token Arg="" Label="OR4">
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.2" Label="BNumberConstant"/>
+</token>
+</token>
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
 <token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="-0.2" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="-0.4" Label="BNumberConstant"/>
 </token>
 </token>
 </token>
@@ -222,13 +248,13 @@
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
-<token Arg="-0.4" Label="BNumberConstant"/>
+<token Arg="-0.6" Label="BNumberConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
-<token Arg="-0.6" Label="BNumberConstant"/>
+<token Arg="-0.8" Label="BNumberConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameQuantifier">
@@ -526,12 +552,18 @@
 <script>
 <token Arg="" Label="AcceptableQuantifiers">
 <token Arg="" Label="AllQuantifiersWhich">
-<token Arg="" Label="OR">
+<token Arg="" Label="OR3">
 <token Arg="" Label="OR4">
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
 <token Arg="0.99" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.8" Label="BNumberConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameQuantifier">
@@ -546,10 +578,30 @@
 <token Arg="0.4" Label="BNumberConstant"/>
 </token>
 </token>
+</token>
+<token Arg="" Label="OR4">
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="0.2" Label="BNumberConstant"/>
+</token>
+</token>
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
 <token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="-0.2" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="BNumber2Quantifier">
+<token Arg="-0.4" Label="BNumberConstant"/>
 </token>
 </token>
 </token>
@@ -557,13 +609,13 @@
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
-<token Arg="-0.4" Label="BNumberConstant"/>
+<token Arg="-0.6" Label="BNumberConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
-<token Arg="-0.6" Label="BNumberConstant"/>
+<token Arg="-0.8" Label="BNumberConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameQuantifier">
@@ -808,7 +860,7 @@
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
 </token>
 </token>
 </token>
@@ -1062,7 +1114,11 @@
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
-<token Arg="" Label="Random"/>
+<token Arg="" Label="BInverse">
+<token Arg="" Label="Quantifier2BNumber">
+<token Arg="" Label="This5Quantifier"/>
+</token>
+</token>
 </token>
 </token>
 </token>
@@ -1152,12 +1208,18 @@
 <script>
 <token Arg="" Label="AcceptableQuantifiers">
 <token Arg="" Label="AllQuantifiersWhich">
+<token Arg="" Label="OR">
 <token Arg="" Label="AreSameQuantifier">
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="BNumber2Quantifier">
 <token Arg="" Label="BInverse">
 <token Arg="" Label="Random"/>
 </token>
+</token>
+</token>
+<token Arg="" Label="AreSameQuantifier">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="This5Quantifier"/>
 </token>
 </token>
 </token>
@@ -1284,6 +1346,63 @@
 </script>
 </socketSpecs>
 </option>
+<option Label="FATE_what_going_to_do">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ReactingActor"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
 <option Label="A_say_B_talk_about_C">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -1343,8 +1462,21 @@
 <socketSpecs Index="3">
 <script>
 <token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsOnStage">
-<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AND">
+<token Arg="" Label="NOT">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+<token Arg="" Label="NOT">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</token>
 </token>
 </token>
 </script>
@@ -1531,6 +1663,17 @@
 </token>
 </assumeRoleIf>
 <optionlink Index="14"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="15"/>
 </role>
 </roleSet>
 <categorySet>
@@ -2637,6 +2780,7 @@
 </token>
 </script>
 </socket>
+<rolelink Index="15" Label="A"/>
 </verb>
 <verb Label="A_chat_more_with_B" Witnesses="ANYBODY_ON_STAGE">
 <hijackable>false</hijackable>
@@ -2683,7 +2827,7 @@
 </token>
 </script>
 </socket>
-<rolelink Index="15" Label="A"/>
+<rolelink Index="16" Label="A"/>
 </verb>
 <verb Label="FATE_who_greet_who" Witnesses="ANYBODY_ON_STAGE">
 <hijackable>false</hijackable>
