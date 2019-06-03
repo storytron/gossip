@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2823" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2824" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
 <startingVerb Label="A_greet_B"/>
@@ -35,7 +35,7 @@
 </actor>
 <actor Label="Bara">
 <attributes>
-<attribute Name="description">the player</attribute>
+<attribute Name="description">YOU are Bara. Are you nice? Are you nasty? Are you honest? Are you gullible? You can be whatever you want to be.</attribute>
 <attribute Name="image">image3796083047282614043.jpg</attribute>
 <attribute Name="active">true</attribute>
 <attribute Name="female">true</attribute>
@@ -51,7 +51,7 @@
 </actor>
 <actor Label="Owen">
 <attributes>
-<attribute Name="description"> </attribute>
+<attribute Name="description">Owen is the catcher on the baseball team. His grades are aveage for a college-bound kid. Own is honest to a fault but not at all gullible - an odd combination. He has his own band, and they do a pretty good version of "Satisfaction" but otherwise, they stink. Nobody cares much, because they like to get together at Owen's place when they practice. </attribute>
 <attribute Name="image">image7535588260959233011.jpg</attribute>
 <attribute Name="active">true</attribute>
 <attribute Name="female">false</attribute>
@@ -67,7 +67,7 @@
 </actor>
 <actor Label="Max">
 <attributes>
-<attribute Name="description"> </attribute>
+<attribute Name="description">Max is the top computer guy in the school; everybod thinks that someday he'll invent some great app and get rich. Like most computer guys, he's brainy but awkward around people. He's so naive that he believes everything people tell him. He seems lonely and wants to make some friends. He's reasonably honest. </attribute>
 <attribute Name="image">image2417762318180500494.jpg</attribute>
 <attribute Name="active">true</attribute>
 <attribute Name="female">false</attribute>
@@ -83,7 +83,7 @@
 </actor>
 <actor Label="Ella">
 <attributes>
-<attribute Name="description"> </attribute>
+<attribute Name="description"> Ella takes the hardest courses and gets straight A's. Her mom came here from El Salvador and cleans houses for a living. Ella never know her data - he took off after she was born. Ella spent years lying about her past in order to fit in, but eventually her secret was unearthed and now everybody knows.</attribute>
 <attribute Name="image">image8752711086674121255.jpg</attribute>
 <attribute Name="active">true</attribute>
 <attribute Name="female">true</attribute>
@@ -99,26 +99,10 @@
 </actor>
 <actor Label="Mort">
 <attributes>
-<attribute Name="description"> </attribute>
+<attribute Name="description"> Mort is the class cut-up. He's always cracking jokes in class; teachers don't like it but they laugh at his wisecracks. He was going steady with another girl for nearly two years but she found out he was lying to her and broke up with him. Mort is a suspicious fellow.</attribute>
 <attribute Name="image">image1363122145176617695.jpg</attribute>
 <attribute Name="active">true</attribute>
 <attribute Name="female">false</attribute>
-<attribute Name="dontMoveMe">false</attribute>
-<attribute Name="unconscious">false</attribute>
-<attribute Name="location">BareStage</attribute>
-<attribute Name="spyingOn">Fate</attribute>
-<attribute Name="targetStage">nowhere</attribute>
-<attribute Name="occupiedUntil">0</attribute>
-<attribute Name="cBored">0</attribute>
-<attribute Name="howLongToSpy">0</attribute>
-</attributes>
-</actor>
-<actor Label="Zoe">
-<attributes>
-<attribute Name="description"> </attribute>
-<attribute Name="image">image453858112526700276.jpg</attribute>
-<attribute Name="active">true</attribute>
-<attribute Name="female">true</attribute>
 <attribute Name="dontMoveMe">false</attribute>
 <attribute Name="unconscious">false</attribute>
 <attribute Name="location">BareStage</attribute>
@@ -137,7 +121,6 @@
 <pValues OfWhom="Max"/>
 <pValues OfWhom="Ella"/>
 <pValues OfWhom="Mort"/>
-<pValues OfWhom="Zoe"/>
 </pValueSet>
 <propSet>
 <prop Label="BareProp">
