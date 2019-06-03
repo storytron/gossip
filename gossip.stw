@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2820" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2823" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="B_say_A_that_C_say_A_Z"/>
-<startingRole Label="A"/>
-<startingOption Label="A_say_goodbye_B"/>
+<startingVerb Label="A_greet_B"/>
+<startingRole Label="B"/>
+<startingOption Label="B_return_greet_A"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -736,7 +736,7 @@
 <option Label="B_return_greet_A">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
+<token Arg="" Label="false"/>
 </token>
 </acceptable>
 <desirable>
