@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2824" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2826" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
 <startingVerb Label="A_greet_B"/>
@@ -113,6 +113,22 @@
 <attribute Name="howLongToSpy">0</attribute>
 </attributes>
 </actor>
+<actor Label="Zoe">
+<attributes>
+<attribute Name="description">Everybody is always talking about Zoe. She's had lots of boyfriends and gets invited to all the parties. She is always changing her outfit because of something she read on a fashion blog. Her parents are rich so she has tons of clothes. She'll probably have her own car as soon as she gets her license. Other than those things, she's actually pretty normal.</attribute>
+<attribute Name="image">image6238981498867427365.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">true</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">BareStage</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+</attributes>
+</actor>
 </actorSet>
 <pValueSet>
 <pValues OfWhom="Fate"/>
@@ -121,6 +137,7 @@
 <pValues OfWhom="Max"/>
 <pValues OfWhom="Ella"/>
 <pValues OfWhom="Mort"/>
+<pValues OfWhom="Zoe"/>
 </pValueSet>
 <propSet>
 <prop Label="BareProp">
