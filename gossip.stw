@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2827" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2833" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
 <startingVerb Label="A_greet_B"/>
@@ -64,6 +64,8 @@
 <attribute Name="occupiedUntil">0</attribute>
 <attribute Name="cBored">0</attribute>
 <attribute Name="howLongToSpy">0</attribute>
+<attribute Name="Vain_Humble">0.79991996</attribute>
+<attribute Name="accordFalse_Honest">0.29997</attribute>
 </attributes>
 </actor>
 <actor Label="Max">
@@ -80,6 +82,8 @@
 <attribute Name="occupiedUntil">0</attribute>
 <attribute Name="cBored">0</attribute>
 <attribute Name="howLongToSpy">0</attribute>
+<attribute Name="Vain_Humble">-0.59994</attribute>
+<attribute Name="accordFalse_Honest">0.859914</attribute>
 </attributes>
 </actor>
 <actor Label="Ella">
@@ -96,6 +100,9 @@
 <attribute Name="occupiedUntil">0</attribute>
 <attribute Name="cBored">0</attribute>
 <attribute Name="howLongToSpy">0</attribute>
+<attribute Name="Vain_Humble">0.679932</attribute>
+<attribute Name="False_Honest">-0.639936</attribute>
+<attribute Name="accordFalse_Honest">0.47995198</attribute>
 </attributes>
 </actor>
 <actor Label="Mort">
@@ -112,6 +119,8 @@
 <attribute Name="occupiedUntil">0</attribute>
 <attribute Name="cBored">0</attribute>
 <attribute Name="howLongToSpy">0</attribute>
+<attribute Name="False_Honest">-0.859914</attribute>
+<attribute Name="accordFalse_Honest">-0.859914</attribute>
 </attributes>
 </actor>
 <actor Label="Zoe">
@@ -128,6 +137,8 @@
 <attribute Name="occupiedUntil">0</attribute>
 <attribute Name="cBored">0</attribute>
 <attribute Name="howLongToSpy">0</attribute>
+<attribute Name="Vain_Humble">-0.89991</attribute>
+<attribute Name="accordFalse_Honest">0.779922</attribute>
 </attributes>
 </actor>
 </actorSet>
