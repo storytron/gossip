@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2833" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2835" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
 <startingVerb Label="A_greet_B"/>
@@ -12,10 +12,10 @@
 <outerTraits>
 <attribute Label="Quiet_Chatty" rvisible="false" visible="false"/>
 <attribute Label="Cool_Volatile" rvisible="false" visible="false"/>
-<attribute Label="Vain_Humble"/>
-<attribute Label="Bad_Good"/>
-<attribute Label="False_Honest"/>
-<attribute Label="Timid_Dominant"/>
+<attribute Label="Vain_Humble" visible="false"/>
+<attribute Label="Bad_Good" visible="false"/>
+<attribute Label="False_Honest" visible="false"/>
+<attribute Label="Timid_Dominant" visible="false"/>
 </outerTraits>
 <actorTextTraits/>
 <actorSet>
