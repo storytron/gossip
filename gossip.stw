@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2835" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="2837" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
 <startingVerb Label="A_greet_B"/>
@@ -137,8 +137,8 @@
 <attribute Name="occupiedUntil">0</attribute>
 <attribute Name="cBored">0</attribute>
 <attribute Name="howLongToSpy">0</attribute>
-<attribute Name="Vain_Humble">-0.89991</attribute>
-<attribute Name="accordFalse_Honest">0.779922</attribute>
+<attribute Name="Vain_Humble">-0.9999</attribute>
+<attribute Name="accordFalse_Honest">0.97990197</attribute>
 </attributes>
 </actor>
 </actorSet>
