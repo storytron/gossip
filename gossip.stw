@@ -1689,7 +1689,7 @@
 </role>
 </roleSet>
 <categorySet>
-<category Label="System">
+<category Label="Story">
 <verb Label="once upon a time" Witnesses="ANYBODY_ON_STAGE">
 <description>The first Verb to execute in every storyworld</description>
 <hijackable>false</hijackable>
